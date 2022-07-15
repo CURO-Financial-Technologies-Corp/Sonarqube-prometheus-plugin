@@ -40,6 +40,15 @@
 2. Drop `sonar-prometheus-exporter-1.0.0.jar` into `$SONARQUBE_HOME/extensions/plugins`.
 3. Restart the SonarQube server.
 
+## For Helm Add 
+1. Add https://github.com/CURO-Financial-Technologies-Corp/sonarqube-prometheus-exporter/releases/download/v1.0.0/sonar-prometheus-exporter-1.0.0.jar into plugins array 
+
+```
+plugins:
+  install:
+    - "https://github.com/CURO-Financial-Technologies-Corp/sonarqube-prometheus-exporter/releases/download/v1.0.0/sonar-prometheus-exporter-1.0.0.jar"
+```
+
 ## Usage
 
 1. Configure which metrics you want to export under Administration &rarr; Configuration &rarr; General Settings &rarr; Prometheus Exporter
